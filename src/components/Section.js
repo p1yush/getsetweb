@@ -5,7 +5,7 @@ function Section() {
   return (
     <div className='hero-container'>
     <h1>ADVENTURE AWAITS</h1>
-    <p>What are you waiting for?</p>
+    <p>Build a website the way you want</p>
     <div className='hero-btns'>
       <Button
         className='btns'
