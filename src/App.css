@@ -7,9 +7,9 @@
 }
 
 .home,
-.services,
-.products,
-.sign-up {
+.contact,
+.specialization,
+.about {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -17,16 +17,7 @@
   font-size: 3rem;
 }
 
-.services {
-  background-color: aliceblue;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: black;
-  font-size: 100px;
-}
-
-.products {
+.about {
   background-color: aliceblue;
   background-position: center;
   background-size: fill;
@@ -250,6 +241,17 @@
   color: aliceblue;
   transition: 250ms;
 }
+.section {
+  background-color: aliceblue;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
 .hero-container {
   background-color: aliceblue;
   height: 100vh;
@@ -259,6 +261,7 @@
   justify-content: center;
   align-items: center;
   object-fit: contain;
+  padding-left: 100px;
 }
 
 .hero-container > h1 {
@@ -274,6 +277,25 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
+.hero-container h1{
+  overflow: hidden; 
+  border-right: .15em solid #1F4690; 
+  white-space: nowrap; 
+  letter-spacing: .07em;
+  animation: 
+    typing 2.5s steps(40, end),
+    blink-caret .80s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 70% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: #1F4690; }
+}
 
 .hero-btns {
   margin-top: 32px;
@@ -281,6 +303,18 @@
 
 .hero-btns .btn {
   margin: 6px;
+}
+
+.image {
+  background-color: aliceblue;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+  padding-right: 100px;
 }
 
 .fa-play-circle {
@@ -313,3 +347,4 @@
     width: 100%;
   }
 }
+
