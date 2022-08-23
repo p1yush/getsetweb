@@ -1,7 +1,7 @@
-import Homepage from './components/Homepage';
-import About from './components/About';
-import Specialization from './components/Specialization';
-import Contact from './components/Contact';
+import Homepage from './pages/Homepage';
+import About from './pages/About';
+import Specialization from './pages/Specialization';
+import Contact from './pages/Contact';
 import './App.css';
 import { Route, Routes, useLocation } from 'react-router-dom';
 
