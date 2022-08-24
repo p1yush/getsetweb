@@ -3,10 +3,10 @@ import Section from "../components/Section";
 
 const Homepage = () => {
     return (
-      <>
+      <div className="home">
       <Navbar />
       <Section />
-      </>
+      </div>
     );
 };
 

@@ -1,3 +1,4 @@
+import Typewriter from 'typewriter-effect';
 import '../App.css';
 import { Button } from './Button';
 
@@ -5,7 +6,15 @@ function Section() {
   return (
     <div className='section'>
     <div className='hero-container'>
-    <h1>You Think, We Create</h1>
+      <div className='typing'>
+      <Typewriter
+      onInit ={(typewriter) => {
+        typewriter
+        .typeString("You Think, We Create")
+        .pauseFor(1000)
+        .start();
+      }} />
+      </div>
     <p>Build a website the way you want</p>
     <div className='hero-btns'>
       <Button
