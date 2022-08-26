@@ -1,5 +1,5 @@
 import '../App.css';
-import { Link } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -9,10 +9,10 @@ function Footer() {
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
-            <Link to="/about"><h2>About Us</h2></Link>
+            <NavLink to="/about"><h2>About Us</h2></NavLink>
           </div>
           <div class='footer-link-items'>
-            <Link to="/contact"><h2>Contact Us</h2></Link>
+            <NavLink to="/contact"><h2>Contact Us</h2></NavLink>
           </div>
         </div>
         <div className='footer-link-wrapper'>
@@ -43,14 +43,6 @@ function Footer() {
               aria-label='Instagram'
             >
               <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
             </Link>
             <Link
               class='social-icon-link twitter'

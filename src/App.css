@@ -260,12 +260,15 @@
   justify-content: center;
   align-items: center;
   object-fit: contain;
+  margin-left: 100px;
 }
 
 .hero-container > .typing {
   color: black;
   font-size: 60px;
   margin-top: -150px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .hero-container > p {
@@ -273,7 +276,7 @@
   color: black;
   font-size: 32px;
   margin-right: 50px;
-  margin-left: 30px;
+  margin-left: 50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
@@ -293,7 +296,7 @@
 
 .image img {
   height: 99%;
-  width: 70%;
+  width: 80%;
   padding-left: 70px;
 }
 
@@ -301,8 +304,17 @@
 .fa-play-circle {
   margin-left: 4px;
 }
+@media screen and (max-width: 1700px) {
+  .hero-container {
+    margin-left: 0;
+  }
+  .hero-container > .typing {
+    font-size: 50px;
+    margin-top: -150px;
+  }
+}
 
-@media screen and (max-width: 1268px) {
+@media screen and (max-width: 1232px) {
   .image {
       display: none
     }
@@ -463,7 +475,7 @@ h1 {
 
 .footer-container {
   background-color: #242424;
-  padding: 4rem 0 2rem 0;
+  padding: 1rem 0 2rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -477,8 +489,8 @@ h1 {
   align-items: center;
   text-align: center;
 
-  margin-bottom: 24px;
-  padding: 24px;
+  margin-bottom: 20px;
+  padding: 20px;
   color: #fff;
 }
 
@@ -493,18 +505,18 @@ h1 {
 }
 
 .footer-subscription-text {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
   font-size: 20px;
 }
 
 .footer-input {
-  padding: 8px 20px;
+  padding: 4px 15px;
   border-radius: 2px;
   margin-right: 10px;
   outline: none;
   border: none;
   font-size: 18px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   border: 1px solid #fff;
 }
 
@@ -523,7 +535,7 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 16px;
+  margin: 12px;
   text-align: left;
   width: 160px;
   box-sizing: border-box;
@@ -540,7 +552,7 @@ h1 {
 .footer-link-items a {
   color: #fff;
   text-decoration: none;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
 }
 
 .footer-link-items a:hover {
@@ -549,7 +561,7 @@ h1 {
 }
 
 .footer-email-form h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .footer-input::placeholder {
@@ -573,7 +585,7 @@ h1 {
   align-items: center;
   width: 90%;
   max-width: 1000px;
-  margin: 40px auto 0 auto;
+  margin: 20px auto 0 auto;
 }
 
 .social-icons {
@@ -645,6 +657,7 @@ h1 {
   justify-content: center;
   align-items: center;
   object-fit: contain;
+  margin-left: 100px;
 }
 
 .about-container > h1 {
@@ -656,47 +669,51 @@ h1 {
 .about-container > p {
   margin-top: 8px;
   color: black;
-  font-size: 32px;
+  font-size: 25px;
   margin-right: 50px;
-  margin-left: 30px;
+  margin-left: 60px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
 }
 
-.image {
+.about-image {
   background-color: aliceblue;
   height: 100%;
   width: 100%;
+  padding-top: 100px;
 }
 
-.image img {
-  height: 99%;
-  width: 70%;
+.about-image img {
+  height: 80%;
+  width: 80%;
   padding-left: 70px;
 }
 
-@media screen and (max-width: 1268px) {
-  .image {
+@media screen and (max-width: 1232px) {
+  .about-container {
+    margin-left: 0;
+  }
+  .about-image {
       display: none
     }
-  .hero-container > h1 {
+  .about-container > h1 {
     font-size: 60px;
     margin-top: -150px;
   }
 
-  .hero-container > p {
-    font-size: 40px;
+  .about-container > p {
+    font-size: 25px;
 }
 }
 
 @media screen and (max-width: 768px) {
-  .hero-container > h1 {
+  .about-container > h1 {
     font-size: 50px;
     margin-top: -100px;
   }
 
 
-  .hero-container > p {
-    font-size: 30px;
+  .about-container > p {
+    font-size: 25px;
   }
 }
