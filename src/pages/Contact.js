@@ -1,11 +1,12 @@
 import Navbar from "../components/Navbar";
+import ContactSection from "../components/ContactSection";
 
 const Contact = () => {
   return (
-    <>
+    <div className="contact">
     <Navbar />
-       Contact
-       </>
+    <ContactSection />
+    </div>
   );
 };
 

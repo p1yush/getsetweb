@@ -1,6 +1,8 @@
+import { HashLink } from 'react-router-hash-link';
 import Typewriter from 'typewriter-effect';
 import '../App.css';
 import { Button } from './Button';
+
 
 function Section() {
   return (
@@ -17,20 +19,22 @@ function Section() {
       </div>
     <p>Build a website the way you want</p>
     <div className='hero-btns'>
-      <Button
+      <Button 
         className='btns'
         buttonStyle='btn--primary'
         buttonSize='btn--large'
       >
         Get in Touch   
       </Button>
-      <Button
+      <HashLink smooth to='#Designs'>
+       <Button
           className='btns'
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
           Designs for you <i class="fa-solid fa-circle-arrow-right"></i>
         </Button>
+        </HashLink>
     </div>
   </div>
   <div className='image'>
