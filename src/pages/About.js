@@ -13,7 +13,7 @@ const About = () => {
         <p>We are a team of highly dedicated and committed website developers, who will be available to assist their clients, each and every second.</p>
      </div>
      <div className='about-image'>
-       <img src="images/Aboutimage.png" alt='logo'/>
+       <img src="images/Specializationimage.png" alt='logo'/>
      </div>
      </div>
      <hr />

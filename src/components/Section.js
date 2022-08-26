@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import { HashLink } from 'react-router-hash-link';
 import Typewriter from 'typewriter-effect';
 import '../App.css';
@@ -19,13 +20,13 @@ function Section() {
       </div>
     <p>Build a website the way you want</p>
     <div className='hero-btns'>
-      <Button 
+      <NavLink to="/contact"><Button 
         className='btns'
         buttonStyle='btn--primary'
         buttonSize='btn--large'
       >
         Get in Touch   
-      </Button>
+      </Button></NavLink>
       <HashLink smooth to='#Designs'>
        <Button
           className='btns'
