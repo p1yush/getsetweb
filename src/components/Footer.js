@@ -31,12 +31,12 @@ function Footer() {
           <div class='social-icons'>
             <a
               class='social-icon-link envelope'
-              href="info@getsetweb.co"
+              href="https://api.whatsapp.com/send/?phone=%2B918920265833&text&type=phone_number&app_absent=0"
               target='_blank'
               rel="noopener noreferrer"
               aria-label='Facebook'
             >
-              <i class="fa fa-envelope" aria-hidden="true"></i>
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
             </a>
             <a
               class='social-icon-link linkedin'
