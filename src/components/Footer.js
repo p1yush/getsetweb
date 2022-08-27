@@ -3,6 +3,7 @@ import { NavLink, Link } from 'react-router-dom';
 
 function Footer() {
   return (
+    
     <div className='footer-container'>
       <section className='footer-subscription'>
       </section>
@@ -28,38 +29,24 @@ function Footer() {
           </div>
           <small class='website-rights'>GetSetWeb © 2022</small>
           <div class='social-icons'>
-            <Link
-              class='social-icon-link facebook'
-              to='/'
+            <a
+              class='social-icon-link envelope'
+              href="info@getsetweb.co"
               target='_blank'
+              rel="noopener noreferrer"
               aria-label='Facebook'
             >
-              <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </a>
+            <a
+              class='social-icon-link linkedin'
+              href="https://www.linkedin.com/company/get-set-web/" 
               target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
+              rel="noopener noreferrer"
               aria-label='LinkedIn'
             >
               <i class='fab fa-linkedin' />
-            </Link>
+            </a>
           </div>
         </div>
       </section>
