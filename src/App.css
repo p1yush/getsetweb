@@ -723,17 +723,6 @@ h1 {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .about-container > h1 {
-    font-size: 40px;
-  }
-
-
-  .about-container > p {
-    font-size: 15px;
-  }
-}
-
 /* Specialization */
 /*.special-section {
   background-color: aliceblue;
