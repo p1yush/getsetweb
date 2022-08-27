@@ -717,7 +717,7 @@ h1 {
 @media screen and (max-width: 768px) {
   .about-container > h1 {
     font-size: 50px;
-    margin-top: -100px;
+    margin-top: -50px;
   }
 
 
@@ -759,7 +759,7 @@ h1 {
   margin-top: 8px;
   color: black;
   font-size: 25px;
-  margin-right: 60px;
+  margin-right: 50px;
   margin-left: 50px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
     'Lucida Sans', Arial, sans-serif;
@@ -797,6 +797,9 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+  .special-container {
+    padding-right: 0;
+  }
   .special-container > h1 {
     font-size: 50px;
     margin-top: -100px;
@@ -931,6 +934,11 @@ input:focus, textarea:focus{
   .lg-view {
     display:none;  
   }
+}
+
+.contact-heading {
+  font-size: 30px;
+  margin-top: 70px;
 }
 
 @media only screen and (min-width: 600px) {
