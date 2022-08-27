@@ -9,7 +9,7 @@ function ContactSection() {
       const sendEmail = (e) => {
         e.preventDefault();
     
-        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', form.current, 'YOUR_PUBLIC_KEY')
+        emailjs.sendForm('service_g28ebrv', 'template_9j5yjnx', form.current, '3e0oCWgwOrHDIbg5R')
           .then((result) => {
               console.log(result.text);
           }, (error) => {
@@ -31,7 +31,7 @@ function ContactSection() {
       <h2 class="sm-view">Let's Chat</h2>
        Name <input type="text" placeholder="Name *"/> 
        Email <input type="email" placeholder="Email *" />
-			 Phone <input type="phone" placeholder="Phone" />
+			 Phone <input type="phone" placeholder="Phone *" />
        Message<textarea rows="6" placeholder="Message"></textarea>
 			<button className='contact-button'>Submit</button>
 		</form>
