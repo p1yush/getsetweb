@@ -670,7 +670,6 @@ h1 {
 .about-container > h1 {
   color: black;
   font-size: 60px;
-  margin-top: -150px;
 }
 
 .about-container > p {
@@ -706,7 +705,6 @@ h1 {
     }
   .about-container > h1 {
     font-size: 60px;
-    margin-top: -150px;
   }
 
   .about-container > p {
@@ -717,17 +715,16 @@ h1 {
 @media screen and (max-width: 768px) {
   .about-container > h1 {
     font-size: 50px;
-    margin-top: 0px;
   }
 
 
   .about-container > p {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 
 /* Specialization */
-.special-section {
+/*.special-section {
   background-color: aliceblue;
   height: 90%;
   width: 100%;
@@ -809,7 +806,7 @@ h1 {
   .special-container > p {
     font-size: 25px;
   }
-}
+}*/
 
 /*Contact*/
 .container {
