@@ -1,6 +1,8 @@
 {
-  "name": "getsetweb",
-  "version": "0.1.0",
+  "name": "hostinger-react",
+  "homepage": "http://getsetweb.com",
+  "version": "1.0.0",
+  "description": "getsetweb website",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
