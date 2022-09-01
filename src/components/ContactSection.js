@@ -3,19 +3,29 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 
 
-function ContactSection() {
-      const form = useRef();
+const ContactSection = () => {
+  const form = useRef();
 
-      const sendEmail = (e) => {
-        e.preventDefault();
-    
-        emailjs.sendForm('service_g28ebrv', 'template_9j5yjnx', form.current, '3e0oCWgwOrHDIbg5R')
-          .then((result) => {
-              console.log(result.text);
-          }, (error) => {
-              console.log(error.text);
-          });
-      };
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "replace with service id",
+        "replace with template id",
+        form.current,
+        "replace with user id"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
     
       return (
         <div class="container">
@@ -27,14 +37,18 @@ function ContactSection() {
       </div>
     <div class="right-container">
       <div class="right-inner-container">
+        <h2>Let's Talk</h2>
       <form ref={form} onSubmit={sendEmail}>
-      <h2 class="sm-view">Let's Chat</h2>
-       Name <input type="text" placeholder="Name *"/> 
-       Email <input type="email" placeholder="Email *" />
-			 Phone <input type="phone" placeholder="Phone *" />
-       Message<textarea rows="6" placeholder="Message"></textarea>
-			<button className='contact-button'>Submit</button>
-		</form>
+        <label>Your Name</label>
+        <input type="text" name="user_name" />
+        <label>Your Email</label>
+        <input type="text" name="user_name" />
+        <label>Your Phone</label>
+        <input type="email" name="user_email" />
+        <label>Message</label>
+        <textarea name="message" />
+        <input type="submit" value="Send" />
+      </form>
       </div>
     </div>
   </div>
