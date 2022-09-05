@@ -5,6 +5,7 @@ import '../App.css';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 
+
 function AnimatedPages() {
     const location = useLocation();
     return (
