@@ -35,15 +35,15 @@ const ContactSection = () => {
   };
     
       return (
-  <div class="container">
-  <div class="form-container">
-    <div class="left-container">
-      <div class="left-inner-container">
+  <div className="container">
+  <div className="form-container">
+    <div className="left-container">
+      <div className="left-inner-container">
       <img src="images/Contactimage.png" alt=""/>
     </div> 
       </div>
-    <div class="right-container">
-      <div class="right-inner-container">
+    <div className="right-container">
+      <div className="right-inner-container">
         <h2>Let's Talk</h2>
       <form ref={form} onSubmit={sendEmail}>
         <label>Your Name</label>
