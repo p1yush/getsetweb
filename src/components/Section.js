@@ -33,7 +33,7 @@ function Section() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          Website Template <i class="fa-solid fa-circle-arrow-right"></i>
+          Website Template <i className="fa-solid fa-circle-arrow-right"></i>
         </Button>
         </HashLink>
     </div>
