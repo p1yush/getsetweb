@@ -23,11 +23,11 @@ const ContactSection = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("message sent");
+          
+          
         },
         (error) => {
-          console.log(error.text);
+          
         }
       );
       e.target.reset();
